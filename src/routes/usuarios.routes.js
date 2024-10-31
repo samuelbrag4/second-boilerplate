@@ -36,4 +36,22 @@ usuariosRoutes.get("/:id", (req, res) => {
   return res.status(200).json({ message: `O Usuário com o id ${id} foi encontrado :)`, user });
 });
 
+usuariosRoutes.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const { name, email, password } = req.body;
+
+  const user = usersRepository.updateUser(id, name, email, password);
+
+  if (!user) {
+    return res
+      .status(404)
+      .json({ message: `O usuário com o id ${id} não foi encontrado :(` });
+  }
+
+  return res.status(200).json({
+    message: `O usuário com o id ${id} foi atualizado com sucesso!`,
+    user: user,
+  });
+});
+
 export default usuariosRoutes;
