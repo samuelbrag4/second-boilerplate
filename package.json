@@ -1,0 +1,29 @@
+{
+  "name": "nodejs_first-boilerplate",
+  "version": "1.0.0",
+  "description": "Projeto base em NodeJS",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelbrag4/nodejs_first-boilerplate.git"
+  },
+  "keywords": [
+    "SENAI",
+    "NodeJS",
+    "Boilerplate",
+    "BackEnd",
+    "GitHub",
+    "Dev"
+  ],
+  "author": "Samuel Braga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelbrag4/nodejs_first-boilerplate/issues"
+  },
+  "homepage": "https://github.com/samuelbrag4/nodejs_first-boilerplate#readme"
+}
